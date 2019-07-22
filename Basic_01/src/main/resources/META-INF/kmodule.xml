@@ -4,7 +4,7 @@
         <ksession name="ksession-rules"/>
     </kbase>
     <kbase name="shopping-rules" packages="org.topository.shopping">
-        <ksession name="ksession-rules"/>
+        <ksession name="ksession-shopping-rules"/>
     </kbase>
     <kbase name="dtables" packages="com.sample.dtables">
         <ksession name="ksession-dtables"/>
