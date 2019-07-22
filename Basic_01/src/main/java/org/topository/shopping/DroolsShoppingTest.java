@@ -35,7 +35,9 @@ public class DroolsShoppingTest {
 				kSession.insert(cartItem);
 			}
 			
+			System.out.println("\n\n\n---------------------------------------");
 			System.out.println("************* Fire Rules **************");
+			System.out.println("---------------------------------------");
 			kSession.fireAllRules();
 			System.out.println("************************************");
 			System.out.println("Customer cart\n" + customer);
@@ -51,7 +53,9 @@ public class DroolsShoppingTest {
 			}
 			kSession.insert(newCustomer.getCart());
 			kSession.setGlobal("outOfStockProducts", new ArrayList<Product>());
+			System.out.println("\n\n\n---------------------------------------");
 			System.out.println("************* Fire Rules **************");
+			System.out.println("---------------------------------------");
 			kSession.fireAllRules();
 			System.out.println("************************************");
 			System.out.println("Customer cart\n" + customer);

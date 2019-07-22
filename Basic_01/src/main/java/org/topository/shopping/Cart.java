@@ -63,10 +63,10 @@ public class Cart {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		for (CartItem cartItem : cartItems) {
-			sb.append(cartItem).append("\\n");
+			sb.append(cartItem).append("\n");
 		}
-		sb.append("Discount: ").append(getDiscount()).append("\\nTotal: ").append(getTotalPrice())
-				.append("\\nTotal After Discount: ").append(getFinalPrice());
+		sb.append("Discount: ").append(getDiscount()).append("\nTotal: ").append(getTotalPrice())
+				.append("\nTotal After Discount: ").append(getFinalPrice());
 		return sb.toString();
 	}
 

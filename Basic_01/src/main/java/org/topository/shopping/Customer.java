@@ -58,7 +58,7 @@ public class Customer {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Customer new? ").append(isNew).append("\\nCoupon: ").append(coupon).append("\\n").append(cart);
+		sb.append("Customer new? ").append(isNew).append("\nCoupon: ").append(coupon).append("\n").append(cart);
 		return sb.toString();
 	}
 }

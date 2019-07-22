@@ -19,7 +19,7 @@ rule "Print Pending Items"
 when
 	$pendingItems : PendingItems()
 then
-	System.out.println("\\nPrint Pending Items Rule"); 
+	System.out.println("\nPrint Pending Items Rule"); 
 	System.out.println("************************************"); 
 	for (CartItem cartItem : $pendingItems.getCartItems()) { 
 		System.out.println(cartItem);
@@ -30,7 +30,7 @@ rule "Mark the items processed" salience -2
 when
 	$cart : Cart()
 then
-	System.out.println("\\nMark the items processed Rule");
+	System.out.println("\nMark the items processed Rule");
 	System.out.println("************************************");
 	for (CartItem cartItem : $cart.getCartItems()) {
 		if (cartItem.getCartStatus() != CartStatus.NEW || cartItem.getCartStatus() != CartStatus.PENDING) {
